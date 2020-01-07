@@ -1,0 +1,6 @@
+/* NavBar */
+#nav {
+  background: rgb(18, 18, 156);
+  background: linear-gradient(90deg, rgba(18, 18, 156, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
