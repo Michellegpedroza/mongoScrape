@@ -1,1 +1,5 @@
-//routes/index.js
+//routes ~ index.js
+module.exports = app => {
+  require('./articleRoutes.js')(app)
+  require('./commentRoutes.js')(app)
+}

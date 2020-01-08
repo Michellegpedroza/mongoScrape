@@ -1,7 +1,10 @@
 //server.js ~ Packages installed: axios, cheerio, express, mongoose
 require('./config')
 const express = require('express')
+const axios = require('axios')
+const cheerio = require('cheerio')
 const { join } = require('path')
+
 //create express app
 const app = express()
 
