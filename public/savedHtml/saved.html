@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!-- Custom CSS-->
-  <link rel="stylesheet" href="./style.css">
-  <title>Mongo Scraper</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../style.css">
+  <title>Saved Articles</title>
 </head>
 
 <body>
-  <!-- NavBar -->
+  <!-- Nav Bar -->
   <nav id="nav" class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand  text-white" href="#">Mongo Scraper</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -20,21 +21,20 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav text-white">
-        <a class="nav-item nav-link active  text-white" href="./index.html">Home</a>
-        <a class="nav-item nav-link  text-white" href="./savedHtml/saved.html">Saved Articles</a>
-        <a class="nav-item nav-link  text-white" href="#" id='scrapeData'>Scrape Articles</a>
-        <a class="nav-item nav-link  text-white" href="#" id='deleteData'>Clear Articles</a>
+      <div class="navbar-nav">
+        <a class="nav-item nav-link text-white" href="../index.html">Home</a>
+        <a class="nav-item nav-link text-white" href="./saved.html">Saved Articles</a>
       </div>
     </div>
   </nav>
 
-  <br>
-<div class="container">
-  <h1 class="text-center">Mongo Scraper</h1>
+  <div class="container">
+    <h1 class="text-center">Mongo Scraper</h1>
+  
+    <div class="text-center" id='savedArticles'></div>
+  </div>
 
-  <div class="text-center" id='articles'></div>
-</div>
+
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -46,7 +46,7 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src='./app.js'></script>
+  <script src='./saved.js'></script>
 </body>
 
 </html>
