@@ -1,6 +1,6 @@
 //config ~ index.js
 module.exports = require('mongoose')
-  .connect("mongodb://localhost/mongoHeadlines", {
+  .connect("mongodb://<dbuser>:<dbpassword>@ds361768.mlab.com:61768/heroku_xm5x6mlc", {
     useCreateIndex: true,
     useFindAndModify: true,
     useNewUrlParser: true,
