@@ -4,7 +4,6 @@ $('#myModal').on('shown.bs.modal', function () {
 })
 
 
-
 //builds the articles
 let buildSaved = articles => {
   document.getElementById('savedArticles').innerHTML = ''
@@ -50,27 +49,21 @@ let buildSaved = articles => {
 }
 
 // build comment list within a saved article
-
 let buildComments = (comments, id) => {
-
   document.getElementById(`r${id}`).innerHTML = ''
   comments.forEach(comment => {
     let listElem = document.createElement('li')
     listElem.className = 'list-group-item'
-    // listElem.id = `${comment._id}`
     listElem.innerHTML = `
   ${comment.notes}
   <button type="button" class="btn btn-danger delete" data-id = "${comment._id}" data-dismiss="modal">delete</button>
   `
     document.getElementById(`r${id}`).append(listElem)
-
   })
 }
 
 // show saved articles on saved.HTML
 let savedArticles = () => {
-
-  // let articles = [{2: 2}, {2:  3}]
   // buildSaved(articles)
   axios.get('savedArticles')
     .then(({ data }) => {
@@ -90,12 +83,13 @@ document.addEventListener('click', e => {
       notes: notes,
       parent: realId
     }
+
     console.log(comment)
     addNote(comment)
 
     document.getElementById(notesId).value = ''
-
   }
+
   // Event to show comments when article comment is clicked
   if (e.target.className === 'btn btn-primary comment') {
     let datasetId = e.target.dataset.target
@@ -106,7 +100,6 @@ document.addEventListener('click', e => {
   if (e.target.className === 'btn btn-danger delete') {
     let datasetId = e.target.dataset.id
     deleteNote(datasetId)
-
   }
 
   if (e.target.className === 'btn btn-primary delSaved') {
