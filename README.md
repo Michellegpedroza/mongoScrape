@@ -1,7 +1,7 @@
 # mongoScrape
 Mongo Homework
 
-A web app that lets users view and leave comments on the latest news.
+A web app that lets users save articles, as well as view and leave comments on the latest news articles.
 
 <img width="1680" alt="Screen Shot 2020-01-10 at 3 20 36 PM" src="https://user-images.githubusercontent.com/51764119/72198041-51b7a400-33dd-11ea-8280-93ae2dca0cbc.png">
 
