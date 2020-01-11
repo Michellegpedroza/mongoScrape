@@ -19,4 +19,4 @@ require('./routes')(app)
 //listen on port once connection is open
 require('mongoose')
   .connection
-  .once('open', () => app.listen(3000))
+  .once('open', () => app.listen(process.env.MONGODB_URI || 3000))
