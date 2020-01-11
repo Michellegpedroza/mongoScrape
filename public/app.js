@@ -73,6 +73,7 @@ document.addEventListener('click', e => {
 
   if (e.target.id === 'deleteData') {
     deleteArticles()
+    console.log('deleted articles')
   }
 
   if (e.target.className === 'btn btn-primary saveArticle') {
